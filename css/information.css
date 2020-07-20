@@ -1,0 +1,187 @@
+/* Timeline CSS styles */
+.timeline {
+  position: relative;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* The vertical ruler */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 31px;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  position: relative;
+  background-color: inherit;
+  box-sizing: border-box;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #aaa9ad;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 0%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.timelinecontent {
+  padding: 5px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  margin: 5px;
+}
+
+.timelinep {
+  font-size: 15px;
+}
+
+.h2timeline {
+  font-size: 18px;
+}
+
+.container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.left::after, .right::after {
+  left: 15px;
+}
+
+/*Tablet Styles*/
+@media screen and (min-width: 750px) {
+  .timeline {
+    max-width: inherit;
+  }
+}
+
+/* Media queries - timeline on screens at least  999px wide */
+@media screen and (min-width: 999px) {
+  .timeline {
+    position: relative;
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #aaa9ad;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .left {
+    left: 0;
+  }
+
+  .right {
+    left: 50%;
+  }
+
+  .left::after {
+    left: 97%;
+  }
+
+  .right::after {
+    left: -16px;
+  }
+
+  .timelinecontent {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+  }
+
+  .timelinep {
+    font-size: 14px;
+  }
+
+  .h2timeline {
+    font-size: 17px;
+  }
+}

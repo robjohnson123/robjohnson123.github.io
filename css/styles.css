@@ -1,0 +1,212 @@
+/* MOBILE AND GLOBAL STYLES */
+/* applies to screens smaller than 500px (first breakpoint) */
+/* and above unless overwritten below */
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+/*Fonts imported from Google API to make the text look nicer */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+body {
+  background: #aaa9ad;
+  font-family: sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#container {
+  position: relative;
+  min-height: 100%;
+  overflow: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+}
+
+.menu {
+  background-color: inherit;
+  line-height: 2em;
+  color: white;
+  font-size: 0.8em;
+  font-family: 'Montserrat', sans-serif;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.open {
+  display: flex;
+}
+
+h2 {
+  color: #00000;
+  font-family: 'Carter One', cursive;
+  font-size: 30px;
+  text-align: center;
+}
+
+h3,
+a {
+  color: #66CCFF;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Global Navigation and logo styles*/
+.logo {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-nav {
+  margin-top: 5px;
+  max-width: 90%;
+}
+
+.logo a {
+  color: white;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px;
+}
+
+.main-nav a {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  color: white;
+  font-size: 0.7em;
+  font-family: sans-serif;
+}
+
+.main-nav a:hover {
+  color: black;
+}
+
+.header {
+  padding-top: .0.5em;
+  padding-bottom: .0.5em;
+  border: 1px solid #a2a2a2;
+  background-color: #888;
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  flex-direction: column;
+  align-items: center;
+  width: 88%;
+  min-width: 85%;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+/*Div CSS styles for each page to display text*/
+p {
+  font-family: 'Carter One', cursive;
+}
+
+.mainbody {
+  margin-left: 5%;
+  margin-bottom: 0;
+  width: 83%;
+  background: silver;
+  overflow: hidden;
+  border: 4px solid white;
+  font-size: 15px;
+  padding: 0px 10px;
+  height: auto;
+  padding-bottom: 2em;
+  overflow-x: hidden;
+}
+
+.mapmainbody {
+  margin-left: 5%;
+  margin-bottom: 0;
+  width: 83%;
+  background: silver;
+  overflow: hidden;
+  border: 4px solid white;
+  font-size: 15px;
+  padding: 0px 10px;
+  height: 100%;
+  padding-bottom: 2em;
+  overflow-x: hidden;
+}
+
+/* SMARTPHONE STYLES */
+@media screen and (min-width: 500px) {
+  .menu {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mainbody, .mapmainbody {
+    font-size: 20px;
+    width: 85%;
+  }
+
+  .main-nav a {
+    font-size: 0.9em;
+  }
+}
+
+/* TABLET STYLES */
+@media screen and (min-width: 750px) {
+
+  .header,
+  .main-nav {
+    display: flex;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .mainbody, .mapmainbody {
+    font-size: 25px;
+    width: 87%;
+  }
+}
+
+/* DESKTOP STYLES */
+/* applies to screens wider than 999px */
+@media screen and (min-width: 1000px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .mainbody, .mapmainbody {
+    font-size: 28px;
+    width: 88%;
+  }
+}
+
+/*Styles to format if someone prints the website*/
+@media print {
+  .main-nav, .menu {
+    display: none;
+  }
+
+  logo {
+    display: contents;
+    align-content: center;
+  }
+}

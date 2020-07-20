@@ -1,0 +1,23 @@
+This information was implemented from here: https://www.pettitts.co.uk/blog/things-to-see-route-66
+To avoid CORS errors as I was not hosting it on a server I have hosted the JSON file online here: https://www.npoint.io/docs/7862372fed7ff4d76748
+[
+  [1,"Cadillac Ranch", "Amarillo, TX", "35.187831, -101.987153"],
+  [2,"The Milk Bottle Grocery", "Oklahoma City, OK", "35.494443, -97.532089"],
+  [3,"The Painted Desert", "Indian Wells, AZ", "35.501301, -110.084012"],
+  [4,"The Gateway Arch", "St Louis, MO", "38.625663, -90.184862"],
+  [5,"Route 66 Hall of Fame Museum", "Pontiac, IL", "40.881319, -88.629003"],
+  [6,"Ed Galloway’s Totem Pole Park", "Foyil, OK", "36.438467, -95.448056"],
+  [7,"Petrified Forest", "Holbrook, AZ", "34.915478, -109.806002"],
+  [8,"Santa Monica Pier", "Santa Monica, CA", "34.019721, -118.492944"],
+  [9,"The Blue Whale", "Catoosa, OK", "36.194743, -95.733226"],
+  [10,"The Wigwam Motel", "Holbrook, AZ", "34.903527, -110.168990"],
+  [11,"Palo Duro Canyon State Park", "Amarillo, TX", "34.937333, -101.647553"],
+  [12,"Lou Mitchell’s Diner", "Chicago, IL", "41.878695, -87.642245"],
+  [13,"Route 66 Museum", "Clinton, OK", "35.506431, -98.986418"],
+  [14,"Meramec Caverns", "Stanton, MO", "38.241185, -91.091674"],
+  [15,"The Gemini Giant", "Wilmington, IL", "41.311200, -88.138803"],
+  [16,"Sandia Peak Aerial Tramway", "Albuquerque, NM", "35.191552, -106.479230"],
+  [17,"Rialto Square Theatre", "Joliet, IL", "41.527081, -88.080967"],
+  [18,"Mojave National Preserve", "Baker, CA", "35.160497, -115.454435"],
+  [19,"Seligman Town Centre", "Seligman, AZ", "35.325791, -112.879178"]
+]

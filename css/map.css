@@ -1,0 +1,9 @@
+html, body, #mapCanvas {
+  height: 90%;
+  margin: 0px;
+  position: relative;
+}
+
+#infowindow {
+  padding: 10px;
+}
